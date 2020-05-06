@@ -1,0 +1,66 @@
+
+
+easy-excel
+
+easy-poi
+
+文件上传、下载
+
+
+mybatis-plus 整合api
+
+
+统一参数校验
+
+
+open-feign  okhttp3
+
+
+
+
+==============================
+
+SpringBoot2.x + MyBatis-Plus + Druid + 注解方式多数据源
+https://blog.csdn.net/qidasheng2012/article/details/103141061#comments
+
+
+工具类：mybatis plus 代码生成器的使用(二）代码模板生成的自定义#######
+https://blog.csdn.net/zhongzk69/article/details/105898607/
+三、根据需求对其内容进行自定义：
+注意的几点：
+1. entity实体的雪花主键的定义，经实验，可能是mybatis3.3.1版本对应的代码生器并不支持，由于新增了
+IdType.ASSIGN_ID注解，在模板中修改无效，只能在生成器的代码中设置，见上篇代码：
+..........
+工具类：Maven父子多模块的依赖统一版本管理的理解
+工具类：spring cloud alibaba swagger2（一）swagger2注解应用及例子
+工具类：spring cloud alibaba swagger2（一）swagger2注解应用及例子
+工具类：mybatis plus 代码生成器的使用(一）MyBatisPlusGenerator代码生成器自定义
+大话微服务：（十）Spring Cloud gateway+OAuth2 实现单点登录和权限控制（五）OAuth2 认证服务中心的开发
+
+
+大话微服务：（十）Spring Cloud gateway+OAuth2 实现单点登录和权限控制（五）OAuth2 认证服务中心的开发
+https://blog.csdn.net/zhongzk69/article/details/105764538/
+大话微服务：（十）Spring Cloud gateway+OAuth2 实现单点登录和权限控制（四）Spring Security url和 OAuth2资源服务对http的拦截匹配规则设置
+https://blog.csdn.net/zhongzk69/article/details/105726092/
+最新文章
+大话Linux:(一)Linux的前世今生
+工具类：Maven父子多模块的依赖统一版本管理的理解
+工具类：spring cloud alibaba swagger2（一）swagger2注解应用及例子
+工具类：mybatis plus 代码生成器的使用(二）代码模板生成的自定义
+工具类：mybatis plus 代码生成器的使用(一）MyBatisPlusGenerator代码生成器自定义
+
+
+
+大话微服务：（十）Spring Cloud gateway+OAuth2 实现单点登录和权限控制（三）OAuth2.0原理深入研究
+https://blog.csdn.net/zhongzk69/article/details/105703277/
+热门文章
+easyExcel实战：（五）写Excel设置excel的样式 8778
+easyExcel实战：（一）easyExcel和poi、easypoi的优势与spring boot配置 7850
+easyExcel实战：（二）easyExcel读写Excel两种方式（有无java模型） 6520
+flowable实战（五）flowable驳回/退回上一步/退回到 5631
+flowable实战（十二）flowable 任务办理方式与办理人设置探讨 5384
+
+
+
+Springboot+SpringCloud项目脚手架 
+https://blog.csdn.net/HXNLYW/article/details/104635673

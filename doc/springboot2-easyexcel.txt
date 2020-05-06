@@ -1,0 +1,172 @@
+2020-5-6
+
+【GitHub官网地址】
+https://github.com/alibaba/easyexcel
+
+官网文档：
+https://alibaba-easyexcel.github.io/
+
+
+https://github.com/alibaba/easyexcel
+
+【maven依赖】
+https://mvnrepository.com/artifact/com.alibaba/easyexcel
+
+
+
+ xiaoze-smirk /
+easy-springboot 
+https://github.com/xiaoze-smirk/easy-springboot
+springboot2简化版项目 
+
+
+https://github.com/weiwosuoai/spring-boot-tutorial
+https://github.com/weiwosuoai/spring-boot-tutorial.git
+🍏 犬小哈的 《Spring Boot 2.x 学习实战教程》，
+( A Tutorial to Spring Boot 2.x ) 带您玩转 Spring Boot 2.x 教程 !!! 
+https://www.exception.site/springboot
+
+
+-------------------springboot2 easy
+
+SpringBoot图文教程14—阿里开源EasyExcel「为百万数据读写设计」
+https://www.cnblogs.com/nxzblogs/articles/12510393.html
+
+-------------------springboot2 easy-
+
+
+springboot整合阿里easyexcel2.x实现海量数据excel导入导出demo
+https://www.cnblogs.com/zhengwj-joker/p/12808979.html
+
+
+SpringBoot2.x 整合 easyexcel 进行报表导入导出
+https://blog.csdn.net/qidasheng2012/article/details/102707394
+【项目GitHub地址】
+https://github.com/qidasheng2012/springboot2.x_ssm/tree/branche-excel
+注：本项目在SpringBoot2.x搭建SSM项目基础上进行开发
+热门文章
+【二】Maven配置本地仓库、阿里云远程中央仓库镜像 1  https://blog.csdn.net/qidasheng2012/article/details/78152581
+	
+
+阿里 EasyExcel 7 行代码优雅地实现 Excel 文件生成&下载功能
+https://segmentfault.com/a/1190000019472781#articleHeader13
+6.4 自定义处理
+对于更复杂的处理，EasyExcel 预留了 WriterHandler 接口来，允许你自定义处理代码：
+比如下面的示例代码：
+ExcelWriter writer = EasyExcelFactory.getWriterWithTempAndHandler(null, out, ExcelTypeEnum.XLSX, true, new MyWriterHandler());
+..
+七、Web 下载示例代码
+public class Down {
+    @GetMapping("/a.htm")
+    public void cooperation(HttpServletRequest request, HttpServletResponse response) {
+        ServletOutputStream out = response.getOutputStream();
+        ExcelWriter writer = new ExcelWriter(out, ExcelTypeEnum.XLSX, true);
+        String fileName = new String(("UserInfo " + new SimpleDateFormat("yyyy-MM-dd").format(new Date()))
+                .getBytes(), "UTF-8");
+        Sheet sheet1 = new Sheet(1, 0);
+        sheet1.setSheetName("第一个sheet");
+        writer.write0(getListString(), sheet1);
+        writer.finish();
+        response.setContentType("multipart/form-data");
+        response.setCharacterEncoding("utf-8");
+        response.setHeader("Content-disposition", "attachment;filename="+fileName+".xlsx");
+        out.flush();
+        }
+    }
+
+八、需要注意的点
+8.1 写入大数据时，需分片
+比如说，我们需要从数据库中查询出数据量较大时，我们需要在业务层做分片处理，也就是，我们需要分多次查询，再写入，防止内存溢出 OOM.
+8.2 Excel 最大行数问题
+Excel 03, 07 版本均有行数、列数的限制：
+...
+如何解决呢？
+
+    分多个 Excel 文件写入;
+    同一个 Excel 文件，分多个 Sheet 写入；
+
+......
+
+
+SpringBoot2.x整合EasyExcel 读写实现之读操作$$$$4####  AnalysisEventListener
+https://blog.csdn.net/zhuocailing3390/article/details/105883043
+读取Excel表格时，需要依赖一个Entity类或者直接是Map类型，并且对应一个Listener监听类，
+在监听类中通过继承AnalysisEventListener实现方法，对数据进行处理操作。
+
+
+
+
+SpringBoot2.x整合EasyExcel 读写实现之写操作
+https://blog.csdn.net/zhuocailing3390/article/details/105883065
+待更新…
+最新文章
+SpringBoot2.x整合EasyExcel 读写实现
+SpringBoot2.x整合EasyExcel 读写实现之读操作
+SpringBoot参数校验，弄懂@Valid注解实现，返回自定义响应类 #######  https://blog.csdn.net/zhuocailing3390/article/details/105507326
+DataSource + ResultSet操作数据源
+SpringDataSolr操作Solr（二）
+热门文章
+推荐一款实时翻译软件，通过鼠标进行翻译，小巧实用。 48170
+SpingBoot+Thymeleaf 实现页面国际化语言切换 4781 ###  https://blog.csdn.net/zhuocailing3390/article/details/82555503
+Mabits的PageHelper分页插件的使用和Jsp分页页面展示(带源码) 1935 ### https://blog.csdn.net/zhuocailing3390/article/details/78360020
+
+
+SpringBoot2.x整合EasyExcel 读写实现
+https://blog.csdn.net/zhuocailing3390/article/details/105882862
+文档链接如下：
+SpringBoot2.x整合EasyExcel 读写实现之读操作
+SpringBoot2.x整合EasyExcel 读写实现之写操作
+读写操作Github:https://github.com/lxlhz/easy-demo
+
+
+
+------------------------other
+
+
+easyExcel实战：（一）easyExcel和poi、easypoi的优势与spring boot配置
+https://blog.csdn.net/zhongzk69/article/details/92057268
+
+
+easypoi实战：（二）spring boot 配置easypoi
+https://blog.csdn.net/zhongzk69/article/details/91869353
+工具类：Maven父子多模块的依赖统一版本管理的理解
+工具类：spring cloud alibaba swagger2（一）swagger2注解应用及例子 #
+工具类：mybatis plus 代码生成器的使用(二）代码模板生成的自定义 #####  
+https://blog.csdn.net/zhongzk69/article/details/105898607
+工具类：mybatis plus 代码生成器的使用(一）MyBatisPlusGenerator代码生成器自定义 #####
+https://blog.csdn.net/zhongzk69/article/details/105885735
+热门文章
+easyExcel实战：（五）写Excel设置excel的样式 8778
+easyExcel实战：（一）easyExcel和poi、easypoi的优势与spring boot配置 7850 ###  https://blog.csdn.net/zhongzk69/article/details/92057268
+easyExcel实战：（二）easyExcel读写Excel两种方式（有无java模型） 6520
+flowable实战（五）flowable驳回/退回上一步/退回到 5631
+flowable实战（十二）flowable 任务办理方式与办理人设置探讨 5384 ####
+最新评论
+flowable实战（十六）:关于...   https://blog.csdn.net/zhongzk69/article/details/103675421#comments
+=================more easy poi
+SpringBoot集成EsayPoi(Excel导入导出)
+
+SpringBoot框架集成easypoi完成excel导出功能
+
+SpringBoot 系列教程(十三)：SpringBoot集成EasyPoi实现Excel导入导出
+
+easypoi结合spring-boot使用 
+
+
+
+
+springboot2整合easypoi，实现Excel导入导出
+https://blog.csdn.net/xiyang_1990/article/details/95944789
+https://blog.csdn.net/xiyang_1990/article/details/95944789
+最新文章
+关于优惠券后台设计思考
+jdk8对list的各种处理实例详解，包括去重，排序，过滤，分组，统计 ######
+springboot多数据源需要注意定义数据源类的方法事有且只有一个数据源类的方法需加@Primary注解 ####
+https://blog.csdn.net/xiyang_1990/article/details/105384387
+Spring boot 2.x 多数据源配置_注解及事务的实现  #####  https://blog.csdn.net/xiyang_1990/article/details/105141029
+GITHUB开源SpringBoot2.0权限管理系统(若依)
+
+
+
+【一行代码搞定execl导入】springboot集成easypoi
+https://hellojava.cc/article/355
