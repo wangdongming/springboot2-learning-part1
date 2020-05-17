@@ -1,5 +1,5 @@
 
-
+Navicat for MySQL_11.2.15.exe
 
 https://dbeaver.io/download/
 https://dbeaver.io/files/7.0.4/dbeaver-ce-7.0.4-win32.win32.x86_64.zip

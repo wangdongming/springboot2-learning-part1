@@ -1,0 +1,124 @@
+
+
+
+
+---------------------druid 密码加密
+
+
+
+
+Spring Boot （四）： Druid 连接池密码加密与监控####配置超详细-------1
+https://www.cnblogs.com/babycomeon/p/11582303.html
+https://www.cnblogs.com/babycomeon/p/11582303.html
+3.2 数据库密码不加密的配置文件 application-pass.yml 如下：
+代码清单：spring-boot-jpa-druid/src/main/resources/application-pass.yml
+。。。
+5. 示例代码
+示例代码-Github
+
+示例代码-Gitee
+
+6. 参考
+《Druid 官方文档》
+。。。。
+上一篇： 跟我学SpringCloud | 第十九章：Spring Cloud 组件 Docker 化
+下一篇： 跟我学SpringCloud | 第二十章：Spring Cloud 之 okhttp
+阅读排行榜
+1. 跟我学SpringCloud | 第八篇：Spring Cloud Bus 消息总线(14825)
+2. 跟我学SpringCloud | 第十二篇：Spring Cloud Gateway初探(11682)
+3. Spring Cloud Alibaba | Dubbo 与 Spring Cloud 完美结合(9769)
+4. Spring Cloud Alibaba | Gateway基于Nacos动态网关路由(6527)
+5. 跟我学SpringCloud | 第十三篇：Spring Cloud Gateway服务化和过滤器(5120)
+
+
+
+Druid数据库连接池数据库密码加密---------------2
+https://www.jianshu.com/p/4ad738d6424d
+https://www.jianshu.com/p/4ad738d6424d
+进入到druid-1.0.27.jar文件下载的目录，执行以下操作
+    java -cp druid-1.0.27.jar com.alibaba.druid.filter.config.ConfigTools you_password
+    下面是例子
+    java -cp druid-1.0.27.jar com.alibaba.druid.filter.config.ConfigTools 123456
+   回车之后得到下面的数据
+私钥
+。。。。。
+
+
+
+阿里druid数据源配置及数据库密码加密----------------3
+https://www.cnblogs.com/penghq/p/11162572.html
+上一篇： Java使用IE浏览器下载文件，文件名乱码问题
+下一篇： java获取调用当前方法的方法名和行数
+5. Win7下如何安装切换jdk7和jdk8(1)
+
+
+
+阿里druid数据源配置及数据库密码加密
+https://www.w3cschool.cn/wqf_java/wqf_java-7gu82mu3.html
+
+
+
+Druid密码加密#######4#############more imp ############编程方式
+https://www.cnblogs.com/zhuwenjoyce/p/10350707.html
+https://www.cnblogs.com/zhuwenjoyce/p/10350707.html
+https://www.cnblogs.com/zhuwenjoyce/p/10350707.html
+在atomikos里使用密码加密时，解密代码这样写：
+@Primary
+    @Bean(name = "dataSource1")
+    public DataSource testDataSource(DBConfig1 testConfig) throws SQLException {
+        //Atomikos统一管理分布式事务
+        AtomikosDataSourceBean xaDataSource = new AtomikosDataSourceBean();
+
+        //用druidXADataSource方式或者上面的Properties方式都可以
+        DruidXADataSource druidXADataSource = new DruidXADataSource();
+        druidXADataSource.setConnectionProperties("config.decrypt=true;config.decrypt.key="+testConfig.getPublicKey());
+        druidXADataSource.setFilters("config,stat");
+        druidXADataSource.setUrl(testConfig.getUrl());
+        druidXADataSource.setUsername(testConfig.getUsername());
+        druidXADataSource.setPassword(testConfig.getPassword());
+        
+        xaDataSource.setUniqueResourceName("oracle1");
+        xaDataSource.setXaDataSource(druidXADataSource);
+        xaDataSource.setXaDataSourceClassName("com.alibaba.druid.pool.xa.DruidXADataSource");
+        xaDataSource.setMaxLifetime(testConfig.getMaxLifetime());
+        xaDataSource.setMinPoolSize(testConfig.getMinPoolSize());
+        xaDataSource.setMaxPoolSize(testConfig.getMaxPoolSize());
+        xaDataSource.setBorrowConnectionTimeout(testConfig.getBorrowConnectionTimeout());
+        xaDataSource.setLoginTimeout(testConfig.getLoginTimeout());
+        xaDataSource.setMaintenanceInterval(testConfig.getMaintenanceInterval());
+        xaDataSource.setMaxIdleTime(testConfig.getMaxIdleTime());
+        xaDataSource.setTestQuery(testConfig.getTestQuery());
+        
+        LOG.info("分布式事物dataSource1实例化成功");
+        return xaDataSource;
+    }
+上一篇： Spring Cloud Turbine微服务集群实时监控
+下一篇： SpringCloudConfig配置中心git库以及refresh刷新
+
+
+
+-------------------other
+
+利用druid对数据库密码进行加密
+https://blog.csdn.net/feifuzeng/article/details/80798934
+最新文章
+关于tomcat不同版本的maxPostSize配置【待完善】
+Lambda基础用法
+Axure RP 8 注册码
+EDAS入门-springcloud+HSF开发实战
+SpringBoot配置devtools实现热部署
+热门文章
+遍历枚举类两种方式小结 15150
+IDEA的Maven依赖如何引入到External Libraries中 12798
+Echart 从小白到入门 小实例(附源码) 11390
+利用druid对数据库密码进行加密 8420
+最新评论
+利用druid对数据库密码进行加密
+IDEA的Maven依赖如何引入到...
+Echart 从小白到入门 小实例...
+
+
+
+关于druid数据库密码加密的问题
+https://www.oschina.net/question/2308571_2215944
+
